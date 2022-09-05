@@ -1,0 +1,312 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+    width: 100%;
+    display: block;
+    justify-content: center;  
+    box-sizing: border-box;
+}
+.header{
+    background-color: #ffffff;
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.vendez{
+    margin-right: 450px;
+    
+}
+form{
+    display: flex;
+}
+#food{
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 100%;
+}
+.dil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#jumia{
+    width: 200px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between; 
+}
+ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+ul li a:hover{
+    color: #f68b1e;
+}
+input{
+    margin: 4px;
+    border: 0;
+}
+#bordure{
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 45px;
+}
+#espace{
+    width: 400px;
+    padding: 10px;
+
+}
+#sub{
+    width: 120px;
+    padding: 9px; 
+    background-color: #f68b1e;
+    border: #f68b1e;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 45px;
+   
+}
+
+
+
+input{
+    font-size: 15px;
+}
+#part{
+    
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#sous_part{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.part1{
+    width: 25%;
+    background-color: white;
+    border-radius: 5px;
+    height: 450px;
+    padding-left: 15px;
+    
+}
+.part2{
+    width: 80%;
+    height: 450px;
+    position: relative;  
+}
+
+.slider{
+    width: 100%;
+    height: 450px;
+}
+
+.slider .image1{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .5s;
+} 
+
+.slider img.active{
+    opacity: 1;
+}
+
+.suivant, .precedent{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.suivant{
+    right: 1rem;
+}
+.precedent{
+    left: 1rem;
+}
+
+.part3{   
+    width: 250px;
+    height: 220px;
+    padding-left: 15px;
+    background-color: white;  
+    border-radius: 5px;
+}
+p, a{
+    text-decoration: none;
+    color: black;
+    
+}
+ a:hover, a p:hover{
+    color: #f68b1e;
+}
+.part3_1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.separ{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 20%;
+    height: 450px;
+}
+.im{
+    margin-left: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#defil{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+#defil img{
+   height: 150px; 
+   width: 150px;
+   object-fit: cover;
+   border-radius: 50px;    
+}
+
+#sous_defil{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.image_defil1{
+    display: none;
+}
+
+.arrow, .arrow1{
+    background-color: transparent;
+    border: none;
+    max-height: 50px;
+    margin: auto 0;
+}
+
+.arrow:hover, .arrow1:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width : 900px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    #food, .header ul li span{
+        display: none;
+    }
+    #sub{
+        display: none;
+    }
+
+    .header, #defil{
+        width: 100%;
+        margin: 0;
+    }
+
+    #espace{
+        width: 100%;
+        height: 40px;
+
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #jumia{
+        width: 100px;
+    }
+
+    #part{
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+    }
+
+    .slider .image1{
+        width: 380px;
+        height: 200px;
+    }
+    .part1{
+        display: none;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+    .suivant, .precedent{
+        display: none;
+    }
+    .im{ 
+        display: none;
+    }
+
+    .part2{
+        width: 100%;
+    }
+    .part3{
+      display: none;
+    }
+    #defil img{
+        height: 31px; 
+     }
+     #defil{
+        margin-top: -250px;
+     }
+     form{
+        display: flex;
+     }
+     #bordure{
+        height: 25px;
+        display: flex;
+        align-items: center;
+        width: 360px;
+     }
+
+     ul{
+        display: none;
+     }
+
+     input{
+        display: none;
+     }
+}
